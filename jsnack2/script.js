@@ -11,7 +11,7 @@ let io = prompt("Nome")
 let flag = 0;
 for (let i = 0; i < invites.length; i++) {
 
-    if (io === invites[i]) {
+    if (io.toLocaleLowerCase === invites[i].toLocaleLowerCase) {
         console.log("Entra pure")
         flag = 1
     }
