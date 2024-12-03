@@ -1,6 +1,6 @@
 let uno = "ciao"
 let due = "ciao"
-while (isNaN(uno)) {
+while (isNaN(uno) && uno != " ") {
     uno = prompt("Primo numero")
 }
 while (isNaN(due)) {
@@ -10,4 +10,7 @@ while (isNaN(due)) {
 if (uno > due) {
     console.log(uno)
 }
-else console.log(due)
+else if (uno < due) {
+    console.log(due)
+}
+else console.log(`I due numeri sono uguali, ${due} `)
