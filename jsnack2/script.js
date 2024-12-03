@@ -10,7 +10,7 @@ let invites = [
 let io = prompt("Nome")
 let flag = 0;
 let flog = 0;
-while (flag === 0 && flog <= invites.length) {
+while (flag === 0 && flog <= invites.length && isNaN(io)) {
     if (io.toLowerCase == invites[flog].toLowerCase) {
         flag = 1;
         console.log("Entra pure")
