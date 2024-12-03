@@ -1,5 +1,12 @@
-const uno = prompt("Primo numero")
-const due = prompt("secondo numero")
+let uno = "ciao"
+let due = "ciao"
+while (isNaN(uno)) {
+    uno = prompt("Primo numero")
+}
+while (isNaN(due)) {
+    due = prompt("secondo numero")
+}
+
 if (uno > due) {
     console.log(uno)
 }
