@@ -1,9 +1,11 @@
 let uno = "ciao"
 let due = "ciao"
-while (isNaN(uno) && uno != " ") {
+
+while (isNaN(parseFloat(uno))) {
     uno = prompt("Primo numero")
+
 }
-while (isNaN(due)) {
+while (isNaN(parseFloat(due))) {
     due = prompt("secondo numero")
 }
 
