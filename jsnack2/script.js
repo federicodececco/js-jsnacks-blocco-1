@@ -9,13 +9,13 @@ let invites = [
 ]
 let io = prompt("Nome")
 let flag = 0;
-for (let i = 0; i < invites.length; i++) {
-
-    if (io.toLowerCase === invites[i].toLowerCase) {
+let flog = 0;
+while (flag === 0 && flog <= invites.length) {
+    if (io.toLowerCase == invites[flog].toLowerCase) {
+        flag = 1;
         console.log("Entra pure")
-        flag = 1
     }
-
+    flog++;
 }
 if (flag === 0) {
     console.log("Non puoi entrare")
